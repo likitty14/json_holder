@@ -1,0 +1,47 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a sample swagger.",
+    "version": "1.0.0",
+    "title": "Swagger test",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "apiteam@swagger.io"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "gitlab.com",
+  "basePath": "/api/v4/projects/19334198/jobs/600783032/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/play": {
+      "post": {
+        "tags": [
+          "Job related"
+        ],
+        "summary": "Play a pipeline job",
+        "description": "",
+        "operationId": "playJob",
+        "consumes": [
+          "application/json",
+          "application/xml"
+        ],
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  }
+}
